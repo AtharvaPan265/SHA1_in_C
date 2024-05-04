@@ -6,11 +6,11 @@ diff = []
 for i in range(100):
     print("run number:%4d"%(i+1))
     st = time()
-    os.system("cd method1/build/ cmake .. >> /dev/null && make >> /dev/null && ./SHA1 >> /dev/null")
+    os.system("cd method1/build/ && cmake .. >> /dev/null && make >> /dev/null && ./SHA1 >> /dev/null")
     et = time()
     method1Time.append(et - st)
     st = time()
-    os.system("cd method2/build/ cmake .. >> /dev/null && make >> /dev/null && ./SHA1 >> /dev/null")
+    os.system("cd method2/build/ && cmake .. >> /dev/null && make >> /dev/null && ./SHA1 >> /dev/null")
     et = time()
     method2Time.append(et - st)
     diff.append(method1Time[i] - method2Time[i])
