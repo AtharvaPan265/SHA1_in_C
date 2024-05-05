@@ -18,7 +18,7 @@ for i in range(100):
     method2Time.append(et - st)
     diff.append(method1Time[i] - method2Time[i])
 
-print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method1Time))
-print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method2Time))
+print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method1Time)/len(method1Time))
+print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method2Time)/len(method2Time))
 print("The average difference of the time taken in 100 runs is | in seconds: ", sum(diff)/len(diff))
 
