@@ -3,6 +3,9 @@ from time import time
 method1Time = []
 method2Time = []
 diff = []
+os.system("rm -rf method1/build/*")
+os.system("rm -rf method2/build/*")
+
 for i in range(100):
     print("run number:%4d"%(i+1))
     st = time()
@@ -17,5 +20,5 @@ for i in range(100):
 
 print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method1Time))
 print("total time spent running 203 * 100 hashes using method1 | in seconds: ", sum(method2Time))
-print("The average difference of the time taken in 100 runs is | in seconds: ", sum(diff))
+print("The average difference of the time taken in 100 runs is | in seconds: ", sum(diff)/len(diff))
 

@@ -24,7 +24,8 @@ void compressionFunction(const uint8_t *padded_msg, uint32_t hash[5]) {
     s = t & MASK;
     if (t >= 16) {
       W[s] =
-          S((W[(s + 13) & MASK] ^ W[(s + 8) & MASK] ^ W[(s + 2) & MASK] ^ W[s]),
+          S((W[(s + 13) & MASK] ^ W[(s + 8) & MASK] ^ W[(s + 2)
+           & MASK] ^ W[s]),
             1);
     }
     uint32_t TEMP =

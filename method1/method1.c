@@ -45,16 +45,11 @@ void compressionFunction(const uint8_t *padded_msg, uint32_t hash[5]) {
 }
 
 void SHA1(uint32_t *hash, char *message) {
-  uint32_t H0 = 0x67452301;
-  uint32_t H1 = 0xEFCDAB89;
-  uint32_t H2 = 0x98BADCFE;
-  uint32_t H3 = 0x10325476;
-  uint32_t H4 = 0xC3D2E1F0;
-  hash[0] = H0;
-  hash[1] = H1;
-  hash[2] = H2;
-  hash[3] = H3;
-  hash[4] = H4;
+  hash[0] = 0x67452301;
+  hash[1] = 0xEFCDAB89;
+  hash[2] = 0x98BADCFE;
+  hash[3] = 0x10325476;
+  hash[4] = 0xC3D2E1F0;
   uint64_t blkCnt =
       (strlen(message) < 56) ? 1 : ((strlen(message) + 63) / 64) + 1;
   uint8_t blockArr[blkCnt][64];
