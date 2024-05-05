@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/SHA1.dir/SHA1_method2.c.o -o SHA1 

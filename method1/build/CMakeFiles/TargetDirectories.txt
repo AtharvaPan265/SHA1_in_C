@@ -1,3 +1,0 @@
-/home/atharva/Documents/SHA1_test/method1/build/CMakeFiles/SHA1.dir
-/home/atharva/Documents/SHA1_test/method1/build/CMakeFiles/edit_cache.dir
-/home/atharva/Documents/SHA1_test/method1/build/CMakeFiles/rebuild_cache.dir
